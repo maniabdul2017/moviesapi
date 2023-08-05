@@ -1,0 +1,6 @@
+* {
+  margin: 0; /*this thing is gonna get put everything margin to 0 */
+}
+.app {
+  background-color: #111;
+}

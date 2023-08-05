@@ -1,0 +1,31 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+.row__posters {
+  display: flex; /* display is gonna covert them into a row */
+  overflow-y: hidden; /*  its for scrolling up to down or down to up i am putting this to hidden */
+  overflow-x: scroll; /*its for scrolling right to left or left to right */
+  padding: 20px; /* her i am putting padding for to scroll goes a little down to see the full picture*/
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+.row__poster {
+  object-fit: contain; /*object fit means when i am changing the browser size the image is not losing aspect ratio */
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms; /*this line means for whatever reason the size changes its gonna give them a little animate and time half second to change size */
+}
+.row__poster:hover {
+  transform: scale(1.08);
+  /* its like putting animation like going pic big when i am putting mouse on poster*/
+}
+.row__posterLarge {
+  max-height: 250px;
+}
+.row__posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
