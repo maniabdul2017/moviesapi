@@ -6,3 +6,4 @@ const instance = axios.create({
 
 // for example is for sending multiple different request and get data for example instance.get('/foo-bar');
 export default instance;
+// "hello"
